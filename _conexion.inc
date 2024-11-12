@@ -7,7 +7,7 @@
 	$dbpassword="hola";
 
 	//$dbHospitales = 'localhost:C:/tv/HOSPITALES.FDB'; 
-	$dbHospitales = 'localhos/3050t:D:/movialnorte/Televisores/DBs/hospitales.fdb';
+	$dbHospitales = 'localhost/3050:D:/movialnorte/Televisores/DBs/hospitales.fdb';
 	// $dbHospitales = '213.96.32.27:C:/tv/Figueras1.fdb'; 			 // FUNCIONA
 	// $dbHospitales = '87.216.168.163/3051:C:/tv/montpellier1.fdb';  // FUNCIONA
 

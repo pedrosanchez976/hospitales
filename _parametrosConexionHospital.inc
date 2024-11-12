@@ -19,6 +19,10 @@ es usado desde
 
 */
 
+if(! isset($_SESSION)) 
+session_start();  //PEDRO
+
+
 require_once("_conexion.inc"); // por si acaso;; ya invocados en .php de origen de la llamada a este .php
 
 //======================= End Calcular $rutaconexion ========================================	

@@ -26,7 +26,7 @@
 		<table align="center" width="401" border="0">
 			<tr>
 				<td>
-					<div align="left">Seleccione Hospital</div>
+					<div align="left">Seleccione Hospital  <?php echo 'user:'.$_SESSION["iduser"].'-'.$_SESSION["usuario"]?></div>
 				</td>
 				<td colspan="2">
 					<select  name="idhospital">	

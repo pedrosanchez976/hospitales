@@ -31,7 +31,7 @@
 		<br><br>
 
 		<table width="400" border="0" align="center">
-		<tr class="elegiropcion"> <td> introduzca sus credenciales </td></tr>	
+		<tr class="elegiropcion"> <td> introduzca sus credenciales <?php echo 'user:'.$_SESSION["usuario"].', idhospital:'.$_SESSION["idhospital"]?></td></tr>	
 		</table>
 
 		<br>
@@ -51,14 +51,15 @@
 				</td>
 			</tr>
 		  
-		  	<tr><td> <br> <br> </td></tr>
-		  
+		  	<tr><td> <br> </td></tr>
 		  
 			<tr>
 				<td colspan="2" align="center">
 					<input type="submit" name="button" id="button" value="Enviar">    
 				</td>
 			</tr>
+
+			<tr><td> <br> </td></tr>
 		</table>
 	</form>
 	
