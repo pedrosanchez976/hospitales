@@ -1,0 +1,51 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+td {
+	font-family:"Times New Roman", Times, serif;
+}
+
+th {
+	font-family: "Times New Roman", Times, serif;
+}
+
+.elegiropcion {
+	font-weight: bold;
+	color: navy;
+}
+
+
+/* Begin Header.php */
+.TituloPpal{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #FFFFFF;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.textoBienvenida{
+	margin-left: 10px;
+	margin-top: 3px;
+	margin-right: 10px;
+	margin-bottom: 3px;
+}
+
+.imagenFondo {
+    position: relative;
+    width: 400px; /* ancho de la imagen OPCIONAL */
+    height: 59px; /* largo de la imagen OPCIONAL */ 
+}
+
+.imagenFondo span {
+	position: absolute;
+	left: 14px;
+	top: 3px;
+}	
+
+/* End Header.php */
+
+/* �OJO� para esta Principal.php  escribo los estilos 
+en la misma pagina ya que si lo hago aqui no funiona */
+
