@@ -3,7 +3,7 @@
 
 <table align="center" width="400" border="0" cellpadding="0" cellspacing="0" background="images/pie.jpg">
 	<tr>
-		<td colspan="2"><div align="right" class="textoBienvenida" >v 24.05.2024.a    </div></td>
+		<td colspan="2"><div align="right" class="textoBienvenida" >v 12.11.2024.a    </div></td>
 	</tr>
 </table>
 

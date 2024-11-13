@@ -25,7 +25,10 @@
 	if(! isset($_SESSION))
 		session_start();  //PEDRO
 
-	require_once '_checkSesion.inc';  // si existe timeout: limpia $_SESSION 
+	//require_once '_checkSesion.inc';  // si existe timeout: limpia $_SESSION 
+	require_once '_sesionManage.inc'; 
+	checar_timeout_session();
+
 	if ( ! isset( $_SESSION['usuario'] ) ) {  // $_SESSION["usuario"]
 		// Sesión inactiva  
 		header('Location: ./'); // RETORNO A INDEX

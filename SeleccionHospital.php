@@ -26,11 +26,12 @@
 		<table align="center" width="401" border="0">
 			<tr>
 				<td>
-					<div align="left">Seleccione Hospital  <?php echo 'user:'.$_SESSION["iduser"].'-'.$_SESSION["usuario"]?></div>
+					<div align="left">Seleccione Hospital  </div>
 				</td>
 				<td colspan="2">
 					<select  name="idhospital">	
 					<?php
+					try{
 						//$Q=ibase_query($conexionHospitalesFDB, "SELECT idhospital,hospital FROM WEB_IDUSER_HOSPITALES(".$_SESSION["iduser"].") ORDER BY hospital ASC");
 						$iduser=$_SESSION["iduser"];
 						$Q=ibase_query($conexionHospitalesFDB, "SELECT idhospital,hospital FROM WEB_IDUSER_HOSPITALES($iduser) ORDER BY hospital ASC");
@@ -39,6 +40,16 @@
 						}
 						ibase_free_result($Q);  
 						ibase_close($conexionHospitalesFDB);
+						//throw new Exception('División por cero.');
+					} catch (Exception $e){
+						/*
+						print ' <table width="300" border="0" align="center"> ';    
+						print ' <tr> <td> <br /></td></tr>  ';      
+						print ' <tr> <td> _conexion.inc: Error al conectar con la base de datos</td></tr> ';
+						print ' <tr> <td>'. $e->getMessage().'</td></tr> ';*/
+						header('Location:_error.php?error='. $e->getMessage()); 
+						//die();
+					} finally{}
 					?> 
 					</select>				  
 				</td>

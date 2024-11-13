@@ -1,6 +1,5 @@
 
 
-<?php require "index.inc"; ?>
 
 <!DOCTYPE html>
 <html> 
@@ -17,7 +16,6 @@
 <body>
 <!--	<form action="index.php" method="post" name="login" > -->
 
-	<form action="<?php echo $_SERVER["PHP_SELF"]?>" method="post" name="login" >
 	 
 		<table width="400" height="100" border="0" align="center" background="images/cabecera.jpg">
 		</table>
@@ -31,13 +29,14 @@
 		<br><br>
 
 		<table width="400" border="0" align="center">
-		<tr class="elegiropcion"> <td> introduzca sus credenciales </td></tr>	
+		<tr class="elegiropcion"> <td> ERROR: </td></tr>	
+		<tr > <td> <?php echo($_REQUEST['error'])?> </td></tr>	
 		</table>
 
 		<br>
 
 		<table align="center" width="300" border="0">
-			
+			<!-- 
 			<tr>
 				<td align="right">Usuario</td>
 				<td align="center" >
@@ -50,18 +49,18 @@
 					<input type="password" name="password" id="textfield2" >    
 				</td>
 			</tr>
-		  
+		  -->
 		  	<tr><td> <br> </td></tr>
 		  
 			<tr>
 				<td colspan="2" align="center">
-					<input type="submit" name="button" id="button" value="Enviar">    
+					<input type="submit" name="button" id="button" value="Reiniciar" onclick="window.location.href='index.php';">    
 				</td>
 			</tr>
 
 			<tr><td> <br> </td></tr>
 		</table>
-	</form>
+
 	
 <?php
 include "_foot.inc";
