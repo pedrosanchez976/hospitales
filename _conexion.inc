@@ -15,19 +15,22 @@ try{
 	$conexionHospitalesFDB = ibase_connect($dbHospitales, $dbusuario, $dbpassword);			
 	if (!$conexionHospitalesFDB)
 	{ 
-		print ' <table width="300" border="0" align="center"> ';    
+		header('Location:_error.php?error=No se pudo conectar con base de datos ppal');
+		/*print ' <table width="300" border="0" align="center"> ';    
 		print ' <tr> <td> <br /></td></tr>  ';         
 		print ' <tr> <td> Error al conectar con la base de datos</td></tr> ';
-		Exit;
+		Exit;*/
 	} 
 	ini_set ('error_reporting', E_ALL & ~E_NOTICE);
 } catch (Exception $e){
+	header('Location:_error.php?error=No se pudo conectar con base de datos ppal');
+	/*
 		print ' <table width="300" border="0" align="center"> ';    
 		print ' <tr> <td> <br /></td></tr>  ';      
 		print ' <tr> <td> _conexion.inc: Error al conectar con la base de datos</td></tr> ';
 		print ' <tr> <td>'. $e->getMessage().'</td></tr> ';
 		
-		die();
+		die();*/
 } finally{}
   
 ?>
