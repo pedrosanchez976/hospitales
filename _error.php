@@ -50,6 +50,10 @@
 				</td>
 			</tr>
 		  -->
+
+<!--
+		  mejorarlo añadiendo  __FILE__ y __LINE__, informando file y linea de origen del error
+-->
 		  	<tr><td> <br> </td></tr>
 		  
 			<tr>

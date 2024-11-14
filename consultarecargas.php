@@ -19,9 +19,8 @@
 <?php
 	if(! isset($_SESSION))
 		session_start();  //PEDRO
+
 	include "_header.inc"; 
-	//	 $iduser= $_SESSION["iduser"];
-	//$rutaconexion= $_SESSION["rutaconexion"];
 	include("_conexion2.inc");
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -31,6 +30,7 @@
 
 <table width="400" border="0" align="center">
 	<tr class="elegiropcion"> <td> Consulta recarga de monedas</td></tr>
+	<tr> <td> <br /></td></tr>
 </table>
 
 <br>

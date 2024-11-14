@@ -18,8 +18,6 @@
 	if(! isset($_SESSION))
 		session_start();  //PEDRO
 	include "_header.inc"; 
-	//	 $iduser= $_SESSION["iduser"];
-		 //$rutaconexion= $_SESSION["rutaconexion"];
 	include("_conexion2.inc");
 	
 /////////////////////////////////////////////////////////////////////////////////////
